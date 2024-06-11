@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835348945560",
+    "project_id": "suitmedia-mobdev-codingtest",
+    "storage_bucket": "suitmedia-mobdev-codingtest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835348945560:android:b8ff187d94f39c58250eed",
+        "android_client_info": {
+          "package_name": "com.suitmedia.km_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwu7I1WtMLcnp1-KNZJX4BBaLEMGRwf_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

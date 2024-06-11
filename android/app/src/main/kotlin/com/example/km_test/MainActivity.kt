@@ -1,4 +1,4 @@
-package com.example.km_test
+package com.suitmedia.km_test
 
 import io.flutter.embedding.android.FlutterActivity
 
