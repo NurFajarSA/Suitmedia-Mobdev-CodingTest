@@ -24,7 +24,7 @@ jobs:
           channel: 'stable'
 
       - name: Build Release App
-        run: flutter pub get && flutter build apk --dart-define=API_URL=${{ secrets.API_URL }} --dart-define=FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }} --dart-define=FIREBASE_APP_ID=${{ secrets.FIREBASE_APP_ID }} --dart-define=FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }} 
+        run: flutter pub get && flutter build apk --dart-define=API_URL=${{ secrets.API_URL }} 
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
@@ -46,8 +46,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:
-          tag_name: v1.0.0
-          release_name: Release v1.0.0
+          tag_name: v1.0.1
+          release_name: Release v1.0.1
           draft: false
           prerelease: false
 

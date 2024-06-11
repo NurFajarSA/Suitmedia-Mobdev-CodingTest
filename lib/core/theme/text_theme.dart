@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AppTextTheme {
-  // poppins
   static const TextStyle regular = TextStyle(
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,

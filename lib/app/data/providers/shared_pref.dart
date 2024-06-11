@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class TbSharedPref {
   static final TbSharedPref _instance = TbSharedPref._internal();
   static const String userKey = 'user';
+  static const String selectedUserKey = 'selected-user';
 
   late SharedPreferences _prefs; // Marking as 'late' to defer initialization
 

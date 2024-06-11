@@ -10,13 +10,13 @@ class SplashPage extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: AppColors.primary,
       body: Center(
         child: Text(
           'KM Test',
           style: AppTextTheme.semiBold.copyWith(
             fontSize: 32,
-            color: AppColors.primary,
+            color: AppColors.white,
           ),
         ),
       ),

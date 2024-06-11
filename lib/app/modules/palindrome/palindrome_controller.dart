@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:km_test/app/data/providers/shared_pref.dart';
 import 'package:km_test/app/widgets/app_button.dart';
+import 'package:km_test/app/widgets/snackbar.dart';
 import 'package:km_test/core/theme/colors.dart';
 import 'package:km_test/core/theme/text_theme.dart';
 import 'package:km_test/routes/routes.dart';
@@ -32,11 +33,7 @@ class PalindromeController extends GetxController {
 
   void checkPalindrome() {
     if (_palindromeController.value.text.isEmpty) {
-      Get.snackbar('Error', 'Please enter a palindrome',
-          backgroundColor: AppColors.errorBackground,
-          colorText: AppColors.error,
-          snackPosition: SnackPosition.BOTTOM,
-          margin: const EdgeInsets.all(16));
+      getSnackbar('Please enter a palindrome', true);
       return;
     }
 
@@ -71,11 +68,7 @@ class PalindromeController extends GetxController {
 
   void gotoHome() {
     if (_nameController.value.text.isEmpty) {
-      Get.snackbar('Error', 'Please enter your name',
-          backgroundColor: AppColors.errorBackground,
-          colorText: AppColors.error,
-          snackPosition: SnackPosition.BOTTOM,
-          margin: const EdgeInsets.all(16));
+      getSnackbar('Please enter your name', true);
       return;
     }
 

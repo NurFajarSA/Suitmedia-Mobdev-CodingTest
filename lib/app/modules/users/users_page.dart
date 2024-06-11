@@ -5,6 +5,7 @@ import 'package:km_test/app/data/models/user.dart';
 import 'package:km_test/app/modules/users/users_controller.dart';
 import 'package:km_test/app/modules/users/widgets/card_user.dart';
 import 'package:km_test/app/widgets/my_app_bar.dart';
+import 'package:km_test/core/theme/colors.dart';
 
 class UsersPage extends GetView<UsersController> {
   const UsersPage({super.key});
@@ -14,15 +15,18 @@ class UsersPage extends GetView<UsersController> {
     return Scaffold(
         appBar: MyAppBar(title: "Third Screen"),
         body: SafeArea(
-            child: Container(
-                padding: const EdgeInsets.all(20),
-                child: PagedListView<int, User>.separated(
-                  pagingController: controller.pagingController,
-                  builderDelegate: PagedChildBuilderDelegate<User>(
-                    animateTransitions: true,
-                    itemBuilder: (context, item, index) => CardUser(user: item),
-                  ),
-                  separatorBuilder: (context, index) => const Divider(),
-                ))));
+            child: PagedListView<int, User>.separated(
+          padding: const EdgeInsets.all(20),
+          pagingController: controller.pagingController,
+          builderDelegate: PagedChildBuilderDelegate<User>(
+            animateTransitions: true,
+            itemBuilder: (context, item, index) => CardUser(user: item),
+          ),
+          separatorBuilder: (context, index) => const Divider(
+            height: 0.0,
+            thickness: 1,
+            color: AppColors.greyLight,
+          ),
+        )));
   }
 }

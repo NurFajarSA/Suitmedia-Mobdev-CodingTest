@@ -27,16 +27,20 @@ class HomePage extends GetView<HomeController> {
                     style: AppTextTheme.regular.copyWith(fontSize: 12),
                   ),
                   const SizedBox(height: 2),
-                  Text(
-                    controller.user.value,
-                    style: AppTextTheme.semiBold.copyWith(fontSize: 18),
+                  Obx(
+                    () => Text(
+                      controller.user.value,
+                      style: AppTextTheme.semiBold.copyWith(fontSize: 18),
+                    ),
                   )
                 ],
               ),
               Center(
-                child: Text(
-                  "Selected User Name",
-                  style: AppTextTheme.semiBold.copyWith(fontSize: 24),
+                child: Obx(
+                  () => Text(
+                    controller.selectedUser.value,
+                    style: AppTextTheme.semiBold.copyWith(fontSize: 24),
+                  ),
                 ),
               ),
               AppButton(onPressed: controller.chooseUser, text: "Choose a User")
