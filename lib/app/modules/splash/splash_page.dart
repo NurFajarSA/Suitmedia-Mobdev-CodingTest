@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:km_test/app/modules/splash/splash_controller.dart';
 import 'package:km_test/core/theme/colors.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends GetView<SplashController> {
   const SplashPage({super.key});
 
   @override
