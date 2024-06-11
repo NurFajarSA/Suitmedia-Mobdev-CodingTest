@@ -6,7 +6,7 @@ class MyAppBar extends AppBar {
   MyAppBar({super.key, required String title})
       : super(
           title: Text(
-            'Second Screen',
+            title,
             style: AppTextTheme.semiBold.copyWith(fontSize: 18),
           ),
           iconTheme: const IconThemeData(color: AppColors.accent),
