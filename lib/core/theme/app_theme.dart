@@ -12,7 +12,7 @@ class AppTheme {
       accentColor: MaterialColorGenerator.from(AppColors.accent),
       errorColor: MaterialColorGenerator.from(AppColors.error),
       backgroundColor: MaterialColorGenerator.from(AppColors.background),
-      cardColor: MaterialColorGenerator.from(AppColors.surface),
+      cardColor: MaterialColorGenerator.from(AppColors.background),
     ),
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.background,
@@ -23,7 +23,7 @@ class AppTheme {
         fontWeight: FontWeight.w500,
         letterSpacing: 0.15,
         fontFamily: 'Poppins',
-        color: AppColors.secondary,
+        color: AppColors.dark,
       ),
       iconTheme: IconThemeData(
         color: AppColors.primary,
@@ -50,7 +50,7 @@ class AppTheme {
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.primary,
-        foregroundColor: AppColors.surface,
+        foregroundColor: AppColors.background,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
         ),
@@ -88,6 +88,6 @@ class AppTheme {
       ),
     ),
     textTheme: AppTextTheme.textTheme,
-    shadowColor: AppColors.greyLighter,
+    shadowColor: AppColors.greyLight,
   );
 }

@@ -2,110 +2,111 @@ import 'package:flutter/material.dart';
 
 class AppTextTheme {
   // poppins
-  static const TextStyle displayLarge = TextStyle(
-    fontSize: 72,
-    fontWeight: FontWeight.bold,
-    letterSpacing: -1.5,
-    fontFamily: 'sf-pro-display-heavy',
-  );
-  static const TextStyle displayMedium = TextStyle(
-    fontSize: 48,
-    fontWeight: FontWeight.bold,
-    letterSpacing: -0.5,
-    fontFamily: 'sf-pro-display-heavy',
-  );
-  static const TextStyle displaySmall = TextStyle(
-    fontSize: 36,
-    fontWeight: FontWeight.bold,
-    fontFamily: 'sf-pro-display-heavy',
-  );
-  static const TextStyle headlineLarge = TextStyle(
-    fontSize: 24,
-    fontWeight: FontWeight.bold,
-    letterSpacing: 0.25,
-    fontFamily: 'sf-pro-display-bold',
-  );
-  static const TextStyle headlineMedium = TextStyle(
-    fontSize: 18,
-    fontWeight: FontWeight.bold,
-    fontFamily: 'sf-pro-display-bold',
-  );
-  static const TextStyle headlineSmall = TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.bold,
-    letterSpacing: 0.15,
-    fontFamily: 'sf-pro-display-bold',
-  );
-  static const TextStyle titleLarge = TextStyle(
-    fontSize: 24,
-    fontWeight: FontWeight.bold,
-    letterSpacing: 0.15,
-    fontFamily: 'sf-pro-display-semibold',
-  );
-  static const TextStyle titleMedium = TextStyle(
-    fontSize: 18,
-    fontWeight: FontWeight.bold,
-    letterSpacing: 0.15,
-    fontFamily: 'sf-pro-display-semibold',
-  );
-  static const TextStyle titleSmall = TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.bold,
-    letterSpacing: 0.4,
-    fontFamily: 'sf-pro-display-semibold',
-  );
-  static const TextStyle bodyLarge = TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.normal,
-    letterSpacing: 0.5,
-    fontFamily: 'sf-pro-display-medium',
-  );
-  static const TextStyle bodyMedium = TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.normal,
-    letterSpacing: 0.25,
-    fontFamily: 'sf-pro-display-medium',
-  );
-  static const TextStyle bodySmall = TextStyle(
-    fontSize: 12,
-    fontWeight: FontWeight.normal,
-    letterSpacing: 0.25,
-    fontFamily: 'sf-pro-display-medium',
-  );
-  static const TextStyle labelLarge = TextStyle(
-    fontSize: 16,
+  static const TextStyle regular = TextStyle(
+    fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    letterSpacing: 0.15,
-    fontFamily: 'sf-pro-display-regular',
   );
-  static const TextStyle labelMedium = TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.w400,
-    letterSpacing: 0.15,
-    fontFamily: 'sf-pro-display-regular',
+
+  static const TextStyle medium = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w500,
   );
-  static const TextStyle labelSmall = TextStyle(
-    fontSize: 12,
-    fontWeight: FontWeight.w400,
-    letterSpacing: 0.4,
-    fontFamily: 'sf-pro-display-regular',
+
+  static const TextStyle semiBold = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w600,
   );
 
   static const TextTheme textTheme = TextTheme(
-    displayLarge: displayLarge,
-    displayMedium: displayMedium,
-    displaySmall: displaySmall,
-    headlineLarge: headlineLarge,
-    headlineMedium: headlineMedium,
-    headlineSmall: headlineSmall,
-    titleLarge: titleLarge,
-    titleMedium: titleMedium,
-    titleSmall: titleSmall,
-    bodyLarge: bodyLarge,
-    bodyMedium: bodyMedium,
-    bodySmall: bodySmall,
-    labelLarge: labelLarge,
-    labelMedium: labelMedium,
-    labelSmall: labelSmall,
+    displayLarge: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w700,
+      fontSize: 32,
+      letterSpacing: 0.4,
+    ),
+    displayMedium: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w700,
+      fontSize: 24,
+      letterSpacing: 0.4,
+    ),
+    displaySmall: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w700,
+      fontSize: 18,
+      letterSpacing: 0.4,
+    ),
+    headlineLarge: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w600,
+      fontSize: 20,
+      letterSpacing: 0.4,
+    ),
+    headlineMedium: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w600,
+      fontSize: 16,
+      letterSpacing: 0.4,
+    ),
+    headlineSmall: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w600,
+      fontSize: 14,
+      letterSpacing: 0.4,
+    ),
+    titleLarge: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w500,
+      fontSize: 20,
+      letterSpacing: 0.4,
+    ),
+    titleMedium: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w500,
+      fontSize: 16,
+      letterSpacing: 0.4,
+    ),
+    titleSmall: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w500,
+      fontSize: 14,
+      letterSpacing: 0.4,
+    ),
+    bodyLarge: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w400,
+      fontSize: 16,
+      letterSpacing: 0.4,
+    ),
+    bodyMedium: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w400,
+      fontSize: 14,
+      letterSpacing: 0.4,
+    ),
+    bodySmall: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w400,
+      fontSize: 12,
+      letterSpacing: 0.4,
+    ),
+    labelLarge: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w300,
+      fontSize: 16,
+      letterSpacing: 0.4,
+    ),
+    labelMedium: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w300,
+      fontSize: 14,
+      letterSpacing: 0.4,
+    ),
+    labelSmall: TextStyle(
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w300,
+      fontSize: 12,
+      letterSpacing: 0.4,
+    ),
   );
 }
