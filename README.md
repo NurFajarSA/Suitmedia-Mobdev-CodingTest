@@ -7,7 +7,7 @@ This project is aimed at the competency test from Suitmedia. The project is buil
 The application has been released on GitHub and also distributed via Firebase App Distribution. You can find the links to the GitHub release and register as a tester for the Firebase distribution below:
 
 - **GitHub Release:** [Release v1.0.2](https://github.com/NurFajarSA/Suitmedia-Mobdev-CodingTest/releases/tag/v1.0.2)
-- **Firebase App Distribution:** [Register as a Tester](https://link-ke-firebase-app-distribution)
+- **Firebase App Distribution:** [Register as a Tester](https://appdistribution.firebase.dev/i/52adbc2764a3a7f6)
 
 ## 🚀 How to Run the Project?
 To install and run this application, follow these steps:
